@@ -14,7 +14,6 @@ def recSelectionSort(lista, i, j):
     
 def selectionSort(lista, n, index = 0):
     
-
     if index == n:
         return -1
     
