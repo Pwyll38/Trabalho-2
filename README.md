@@ -44,7 +44,16 @@ Aqui, a lista é definida e depois imprimida para demonstração da função.
 
 ### Relatório Técnico 
 
+Numero de loops ou entradas recursivas: 
+    selectionSort: n.
+    recSelectionSort: j (que no pior caso é n).
 
+Numero de operações: 
+    selectionSort: 4
+    recSelectionSort: 2
+
+O(4n*2n)
+O(8n²)
 
 
 Fontes: https://www.gatevidyalay.com/tag/selection-sort-using-divide-and-conquer/
