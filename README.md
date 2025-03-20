@@ -55,5 +55,29 @@ Numero de operações:
 O(4n*2n)
 O(8n²)
 
+#### Teorema Mestre
+
+𝑇(𝑛) = 𝑎 ⋅ 𝑇( 𝑛 / 𝑏 ) + 𝑓(𝑛)
+
+Sendo: 
+- a = Numero de subproblemas na recursão 
+- n/b = Tamanho de cada subproblema 
+- f(n) = Esforço feito fora das chamadas recursivas
+
+No caso do método MaxMin Select, 
+- a = 2, dois subproblemas são gerados.
+- b = 2, o trabalho é reduzido pela metade.
+- f(n) = O(1), o custo externo não depende da entrada.
+
+Assim, 
+
+p = Log2² = 1 
+
+f(n) < n^p (A maior parte do trabalho está na resolução de subproblemas)
+
+T(n) = Θ(n^p) = Θ(n^1)  
+
+Logo, o Teorema mestre mostra que a complexidade é de: O(n)
 
 Fontes: https://www.gatevidyalay.com/tag/selection-sort-using-divide-and-conquer/
+https://www.geeksforgeeks.org/advanced-master-theorem-for-divide-and-conquer-recurrences/ 
